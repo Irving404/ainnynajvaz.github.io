@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 		<style>
 			.button {
 				display: inline-block;
@@ -33,6 +34,7 @@
 			</style>
 	</head>
 	<body class="is-preload" background="images/imagenes/cold3.webp">
+		<audio src="music.mp3" id="reproductor"></audio>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -46,12 +48,10 @@
 									<h1>TANIA NAJERA VAZQUEZ</h1>
 									<p>La mejor amiga que puede existir<br />
 									<strong> BIRTHDAY (15/03/99)</strong></p>
-									<audio src="music.mp3" id="reproductor">
-										
-									</audio>
+									
 									<div>
 										<button class="button" onclick="document.getElementById('reproductor').play()">►</button>
-										<button class="button" onclick="document.getElementById('reproductor').pause()">.  ||  .</button>
+										<button class="button" onclick="document.getElementById('reproductor').pause()"><i class='fas fa-caret-right' style='font-size:24px'></i>/button>
 									</div>	
 								</div>
 
