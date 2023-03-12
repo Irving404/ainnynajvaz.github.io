@@ -25,7 +25,10 @@
 									<audio src="music.mp3" id="reproductor">
 										
 									</audio>
-									<button onclick="document.getElementById('reproductor').play()">►</button>
+									<div>
+										<button onclick="document.getElementById('reproductor').play()">►</button>
+										<button onclick="document.getElementById('reproductor').pause()">||</button>
+									</div>	
 								</div>
 
 								<article class="item thumb span-1">
@@ -109,7 +112,7 @@
 					</section>
 
 			</div>
-			<audio src="music.mp3" autoplay loop></audio>
+			
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -118,21 +121,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				function Sonido(){
-					if(sound){
-						document.querySelector(".Musi-Off").src="icono/Si_Music.svg";
-						MiAudio.src="../Sonido/haha.ogg";	
-						MiAudio.volume = 0.7;
-						MiAudio.play();	
-					}
+				function myFunc() {
+					document.getElementById('reproductor').play();
 				}
-				window.addEventListener('touchstart', function(event) {
-    			// some logic
-    			event.preventDefault(); // <-- that should not be used in passive
-    			// some other magic
-				});
-				
-
+				myFunc();
 			</script>
 	
 	</body>
