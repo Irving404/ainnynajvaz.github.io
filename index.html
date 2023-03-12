@@ -74,10 +74,10 @@
 								<article class="item thumb span-2"><h2>Cute</h2><a href="images/imagenes/img2.jpeg" class="image"><img src="images/imagenes/img2.jpeg" alt=""></a></article>
 								<article class="item thumb span-2"><h2>Random</h2><a href="images/imagenes/img3.jpeg" class="image"><img src="images/imagenes/img3.jpeg" alt=""></a></article>
 								<article class="item thumb span-1"><h2>Different</h2><a href="images/imagenes/img14.jpeg" class="image"><img src="images/imagenes/img14.jpeg" alt=""></a></article>
-								<article class="item thumb span-2"><h2>this is Infinite</h2><a href="images/imagenes/img25.jpeg" class="image"><img src="images/imagenes/img25.jpeg" alt=""></a></article>
+								<article class="item thumb span-2"><h2>Spontaneous</h2><a href="images/imagenes/img25.jpeg" class="image"><img src="images/imagenes/img25.jpeg" alt=""></a></article>
 								<article class="item thumb span-1"><h2>special</h2><a href="images/imagenes/img31.jpeg" class="image"><img src="images/imagenes/img31.jpeg" alt=""></a></article>
 								<article class="item thumb span-2"><h2>Momment</h2><a href="images/imagenes/img11.jpeg" class="image"><img src="images/imagenes/img11.jpeg" alt=""></a></article>
-								<article class="item thumb span-1"><h2>Spontaneous</h2><a href="images/imagenes/img12.jpeg" class="image"><img src="images/imagenes/img12.jpeg" alt=""></a></article>
+								<article class="item thumb span-1"><h2>this is Infinite</h2><a href="images/imagenes/img12.jpeg" class="image"><img src="images/imagenes/img12.jpeg" alt=""></a></article>
 
 							</div>
 
@@ -105,7 +105,7 @@
 					</section>
 
 			</div>
-
+			<audio src="music.mp3" autoplay loop></audio>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
@@ -122,7 +122,14 @@
 						MiAudio.play();	
 					}
 				}
+				window.addEventListener('touchstart', function(event) {
+    			// some logic
+    			event.preventDefault(); // <-- that should not be used in passive
+    			// some other magic
+				});
+
+
 			</script>
-	<audio src="music.mp3" autoplay loop></audio>
+	
 	</body>
 </html>
